@@ -1,0 +1,16 @@
+#Given a starting capital of principal = 10000, a annual rate of rate = 0.05 (5%),
+#and years = 3, calculate the total future value using the compound interest formula:
+#FV=P×(1+r)^t
+
+import math
+principal = 10000
+rate = 0.05
+years = 3
+FV = principal*(1+rate)**years
+print(FV)
+
+#Continuous Compounding (used in derivatives, Black-Scholes, & pricing models):
+#FV=P×e^(r⋅t)
+
+FV = principal * math.exp(rate * years)
+print(FV)
