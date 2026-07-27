@@ -1,0 +1,17 @@
+#** Given strings with this form where the last source value
+#is always separated by two dashes -- **
+#"PRICE:345.324:SOURCE--QUANDL"
+#Create a function called source_finder() that returns the source.
+#For example, the above string passed into the function would return "QUANDL"
+def source_finder(inp):
+    return (inp.split(sep = "--"))[-1]
+print(source_finder("PRICE:345.324:SOURCE--QUANDL"))
+
+#** Create a function called price_finder that returns
+#True if the word 'price' is in a string. Your function should work even if 'Price'
+#is capitalized or next to punctuation ('price!') **
+
+def price_finder(inp):
+    return 'price' in inp.lower()
+
+print(price_finder(inp = "What is the price?"))
