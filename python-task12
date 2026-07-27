@@ -1,0 +1,9 @@
+#Write a function extract_exchange(raw_ticker) that takes a string like
+#"TSLA.US" or "BTC.CRYPTO" (where the extension after the period . represents the exchange)
+#and returns only the exchange in uppercase (e.g., "US" or "CRYPTO").
+
+def extract_exchange(raw_ticker):
+    return raw_ticker.split('.')[-1].upper()
+
+print(extract_exchange('TSLA.us'))     
+print(extract_exchange('BTC.crypto'))
