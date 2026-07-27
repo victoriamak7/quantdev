@@ -1,0 +1,8 @@
+#Write a function is_bullish(headline) that returns
+#True if the word 'bull' or 'bullish' (case-insensitive)
+#appears inside a news headline string, and False otherwise.
+
+def is_bullish(headline):
+    return 'bull' in headline.lower()
+
+print(is_bullish("Markets turn Bullish after CPI report"))
