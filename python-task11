@@ -1,0 +1,22 @@
+#Given this nested options chain structure:
+#option_chain = {
+    #'AAPL': {
+ #       'calls': [
+   #         {'strike': 150, 'premium': 4.5},
+     #       {'strike': 155, 'premium': 2.1}
+   #     ]
+  #  }
+#}
+
+#Extract the premium value (2.1) for the strike price 155.
+
+option_chain = {
+    'AAPL': {
+        'calls': [
+            {'strike': 150, 'premium': 4.5},
+            {'strike': 155, 'premium': 2.1}
+        ]
+    }
+}
+
+print(option_chain['AAPL']['calls'][1]['premium'])
