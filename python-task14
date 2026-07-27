@@ -1,0 +1,11 @@
+#Write a function calc_return(prices) that takes a list of two prices
+#[yesterday_price, today_price] and calculates the simple percentage return:
+#return = (today-yesterday)/yesetrday
+#It should return a float. For example, calc_return([100, 105]) should return 0.05.
+
+def calc_return(prices):
+    yesterday = prices[0]
+    today = prices[1]
+    return (today - yesterday) / yesterday
+
+print(calc_return([100, 105]))  # Output: a 5% return
