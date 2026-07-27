@@ -1,0 +1,11 @@
+#Given action = "BUY", shares = 150, and symbol = "NVDA",
+#use string formatting (either .format() or an f-string) to produce the exact output:
+#"EXECUTED: BUY 150 shares of NVDA"
+
+action = "BUY"
+shares = 150
+symbol = "NVDA"
+
+print("EXECUTED: {x} {y} shares of {z}".format(x=action, y=shares, z=symbol))
+#or
+print(f"EXECUTED: {action} {shares} shares of {symbol}")
