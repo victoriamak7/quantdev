@@ -1,0 +1,9 @@
+#** Given the variable of a nested dictionary with nested lists: **
+
+stock_info = {'sp500':{'today':300,'yesterday': 250}, 'info':['Time',[24,7,365]]}
+#** Use indexing and key calls to grab the following items:**
+#Yesterday's SP500 price (250)
+#The number 365 nested inside a list nested inside the 'info' key.
+
+print(stock_info['sp500']['yesterday'])
+print(stock_info['info'][1][2])
