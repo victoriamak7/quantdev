@@ -1,0 +1,5 @@
+#Given price = 300 , use python to figure out the square root of the price.
+import math
+price = 300
+new_price = math.sqrt(price)
+print(new_price)
