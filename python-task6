@@ -1,0 +1,8 @@
+#** Create a function called count_price() that counts the number
+#of times the word "price" occurs in a string. Account for capitalization
+#and if the word price is next to punctuation. **
+
+def count_price(inp):
+    return s.lower().count('price')
+s = 'Wow that is a nice price, very nice Price! I said price 3 times.'
+print(count_price(s))
