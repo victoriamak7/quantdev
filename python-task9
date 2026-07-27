@@ -1,0 +1,9 @@
+#Given the string ticker_data = "NASDAQ:AAPL:EQUITY",
+#use string slicing or .split() to extract just the middle symbol ("AAPL")
+
+ticker_data = "NASDAQ:APPL:EQUITY"
+
+print(ticker_data.split(':')[1])
+
+#alternative
+print(ticker_data[7:11])
