@@ -1,0 +1,7 @@
+#** Given the variables:**
+
+stock_index = "SP500"
+price = 300
+#** Use .format() to print the following string: **
+#The SP500 is at 300 today.
+print('The {x} is at {y}'.format(x=stock_index, y=price))
