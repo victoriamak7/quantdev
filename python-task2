@@ -1,0 +1,5 @@
+#Given the string:
+#      stock_index = "SP500"
+#Grab '500' from the string using indexing.
+stock_index = "SP500"
+print(stock_index[2:])
